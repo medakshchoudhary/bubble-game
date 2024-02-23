@@ -1,0 +1,53 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: "Gilroy";
+    box-sizing : border-box;
+}
+
+html,body{
+    width : 100%;
+    height : 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(152, 180, 152);
+}
+#panel{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+#pTop{
+    background-color: rgb(91, 133, 91);
+    width: 100%;
+    height: 80px;
+    color: white;
+    display: flex;
+    padding: 0 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.box{
+    color: rgb(10, 61, 10);
+    font-weight: 600;
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: white;
+}
+#pBottom{
+    width: 100%;
+    height: calc(100% - 80px);
+}
