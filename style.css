@@ -68,6 +68,7 @@ html,body{
     width: 100%;
     height: calc(100% - 80px);
     padding: 20px;
+    color: rgb(91, 133, 91);
 }
 .bubble{
     font-size: 25px;
