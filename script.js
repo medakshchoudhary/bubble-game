@@ -44,7 +44,8 @@ function scoreDecreaser(){
 
 document.querySelector("#pBottom")
 .addEventListener("click",function (dets){
-    var bubbleClicked = Number(dets.target.textContent);
+    // .closest(".bubble") => it will find the closest parent element with class bubble (this solved the problem of clicking outside the bubble and still capturing the event)
+    var bubbleClicked = Number(dets.target.closest(".bubble").textContent);
     if(bubbleClicked === newHit){
         scoreIncreaser();
         getNewHit();
