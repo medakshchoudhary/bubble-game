@@ -1,4 +1,4 @@
-var timer = 60;
+var timer = 2;
 var score = 0;
 var newHit = 0;
 
@@ -21,7 +21,7 @@ function runTimer(){
         }
         // when game ends then =>
         else{
-            document.querySelector("#pBottom").innerHTML = `<h1>Game over <br> Your Score : ${score}</h1>`;
+            document.querySelector("#pBottom").innerHTML = `<h1>Game over <br> Your Score : ${score}</h1> <br> <h3>Reload the page to play again</h3>`;
             clearInterval(timerInterval);
         }
     },1000)
